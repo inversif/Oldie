@@ -1,0 +1,20 @@
+{
+
+  "manifest_version": 2,
+  "name": "Oldie",
+  "version": "1.0",
+
+  "description": "Redirects every reddit page to the old Reddit page.",
+
+  "icons": {
+    "1": "icons/oldie.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://*.reddit.com/*"],
+      "js": ["oldie.js"]
+    }
+  ]
+
+}
